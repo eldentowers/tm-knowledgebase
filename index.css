@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;1000&display=swap');
+
+:root {
+  --background-color: #1d1d1d;
+  --callout-background: #2c2d30;
+  --brand-color: #fc941c;
+  --brand-light: #fcbd1c;
+  --border-radius: 6px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--background-color);
+  font-family: 'Mulish', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--background-color);
+  width: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand-color);
+  border-radius: var(--border-radius);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0px 20px 10px;
+  opacity: 0.8;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.header a,
+.header a:hover {
+  color: white !important;
+}
+
+.hr {
+  width: 80%;
+  height: 2px;
+  background-color: var(--callout-background);
+  border-radius: var(--border-radius);
+}
+
+.container {
+  margin-top: 40px;
+  width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo,
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: -20px;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 3var (--border-radius);
+  letter-spacing: 1px;
+}
+
+.entry {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.entry .heading {
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
+.entry .subheading {
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.callout {
+  background-color: var(--callout-background);
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.callout-emoji {
+  width: 10px;
+  height: 10px;
+  padding: 10px 30px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: auto;
+  background-color: var(--callout-emoji-background);
+  font-size: 20px;
+}
+
+.callout-content {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+a {
+  color: var(--brand-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 0.5s;
+  color: var(--brand-light);
+}
+
+a:not(:hover) {
+  transition: all 0.5s;
+  color: var(--brand-color);
+}
