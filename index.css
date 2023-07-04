@@ -48,6 +48,22 @@ body {
   color: white !important;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0vh;
+  left: 0vw;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 2px;
+  opacity: 0.8;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: center;
+  background-color: var(--background-color);
+  opacity: 1;
+}
+
 .hr {
   width: 80%;
   height: 2px;
@@ -57,6 +73,7 @@ body {
 
 .container {
   margin-top: 40px;
+  margin-bottom: 50px;
   width: 80vw;
   margin-right: auto;
   margin-left: auto;
@@ -94,7 +111,7 @@ body {
 
 .entry .subheading {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.8;
   margin-top: -10px;
   margin-bottom: 10px;
@@ -146,4 +163,8 @@ a:hover {
 a:not(:hover) {
   transition: all 0.5s;
   color: var(--brand-color);
+}
+
+li {
+  margin: 10px;
 }
