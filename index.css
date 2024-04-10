@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;1000&display=swap');
 
 :root {
-  --background-color: #1d1d1d;
-  --callout-background: #2c2d30;
-  --brand-color: #fc941c;
-  --brand-light: #fcbd1c;
-  --border-radius: 6px;
+  --background-color: #101010;
+  --callout-background: #2e2e2e;
+  --brand-color: #d5b25e;
+  --brand-light: #e2dbab;
+  --scrollbar-width: 4px;
+  --border-radius: 8px;
 }
 
 body {
@@ -22,12 +23,37 @@ body {
 
 ::-webkit-scrollbar {
   background-color: var(--background-color);
-  width: var(--border-radius);
+  width: var(--scrollbar-width);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--brand-color);
   border-radius: var(--border-radius);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.emph {
+  padding: 1px 7px;
+  line-height: 40px;
+  background-color: var(--callout-background);
+  border-radius: 4px;
+}
+
+.showcase-image {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.caption {
+  font-size: 0.8em;
+  margin-top: -10px;
 }
 
 .header {
@@ -87,12 +113,13 @@ body {
 .logo img {
   width: 150px;
   height: 150px;
-  margin-bottom: -20px;
+  margin-top: 15px;
+  /* margin-bottom: -20px; */
 }
 
 .title {
   font-weight: 1000;
-  font-size: 3var (--border-radius);
+  font-size: 3;
   letter-spacing: 1px;
 }
 
@@ -121,7 +148,7 @@ body {
   background-color: var(--callout-background);
   width: auto;
   height: auto;
-  padding: 10px 15px;
+  padding: 15px 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -141,7 +168,17 @@ body {
   justify-content: center;
   line-height: auto;
   background-color: var(--callout-emoji-background);
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.callout-emoji img {
+  width: 30px;
+  height: 30px;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
 }
 
 .callout-content {
@@ -167,4 +204,26 @@ a:not(:hover) {
 
 li {
   margin: 10px;
+}
+
+ol li {
+  padding: 3px 0 3px 20px;
+}
+
+.go-back {
+  background-color: var(--callout-background);
+  width: fit-content;
+  padding: 12px 15px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.go-back:hover {
+  transition: all 0.2s;
+  opacity: 0.7;
+}
+
+.go-back:not(:hover) {
+  transition: all 0.2s;
+  opacity: 1;
 }
