@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700;1000&display=swap');
 
 :root {
+  --sub-text-color: #b9b9b9;
   --background-color: #101010;
   --callout-background: #2e2e2e;
   --brand-color: #d5b25e;
   --brand-light: #e2dbab;
+  --green: rgb(17, 204, 95);
+  --red: rgb(228, 71, 71);
   --scrollbar-width: 4px;
   --border-radius: 8px;
+  --text-shadow: 0 0 20px var(--brand-light);
 }
 
 body {
@@ -37,6 +41,31 @@ body {
 
 .bold {
   font-weight: bold;
+}
+
+.current {
+  color: var(--brand-light) !important;
+}
+
+.argument.required {
+  color: var(--red);
+  background-color: var(--callout-background);
+  padding: 7px 10px;
+  border-radius: var(--border-radius);
+}
+
+.argument.optional {
+  color: var(--green);
+  background-color: var(--callout-background);
+  padding: 7px 10px;
+  border-radius: var(--border-radius);
+}
+
+.argument.base {
+  color: var(--brand-color);
+  background-color: var(--callout-background);
+  padding: 7px 10px;
+  border-radius: var(--border-radius);
 }
 
 .emph {
@@ -90,11 +119,15 @@ body {
   opacity: 1;
 }
 
-.hr {
+.table-of-contents .hr {
   width: 80%;
   height: 2px;
   background-color: var(--callout-background);
   border-radius: var(--border-radius);
+}
+
+.selected-toc:hover {
+  color: white !important;
 }
 
 .container {
@@ -139,7 +172,8 @@ body {
 .entry .subheading {
   font-weight: 400;
   font-size: 18px;
-  opacity: 0.8;
+  /* opacity: 0.8;color */
+  color: var(--sub-text-color);
   margin-top: -10px;
   margin-bottom: 10px;
 }

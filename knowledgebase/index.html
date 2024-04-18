@@ -32,23 +32,41 @@
     -->
       <div class="entry">
         <h1 class="heading">Table of Contents</h1>
-        <div class="content">
+        <div class="content" class="table-of-contents">
           <ol>
-            <li><a href="#slash-breakdown">Slash Command Breakdown</a></li>
+            <li><a href="#slash-command-breakdown" class="toc-item">Slash Command Breakdown</a></li>
             <ol style="list-style-type: lower-alpha;">
-              <li><a href="#how-to-use">How to use a Slash Command</a></li>
-              <li><a href="#supplying-arguments">Supplying Arguments</a></li>
+              <li><a href="#how-to-use-a-slash-command" class="toc-item">How to use a Slash Command</a></li>
+              <li><a href="#supplying-arguments-to-slash-commands" class="toc-item">Supplying Arguments to Slash Commands</a></li>
+            </ol>
+            <h2 class="heading">Commands</h2>
+            <!-- <li><a href="commands">General Commands</a></li>
+            <ol style="list-style-type: lower-alpha;">
+              <li><a href="commands#info" class="toc-item">/info</a></li>
+              <ul>
+                <li><a href="commands#info-user" class="toc-item">/info user</a></li>
+                <li><a href="commands#info-server" class="toc-item">/info server</a></li>
+                <li><a href="commands#info-avatar" class="toc-item">/info avatar</a></li>
+                <li><a href="commands#info-invite" class="toc-item">/info invite</a></li>
+              </ul>
+              <li><a href="commands#worms" class="toc-item">/worms</a></li>
+
+            </ol> -->
+            <li><a href="commands/pvp">PvP Commands</a></li>
+            <ol style="list-style-type: lower-alpha;">
+              <li><a href="commands/pvp/#wager-battle" class="toc-item">/wager-battle</a></li>
+              
             </ol>
           </ol>
         </div>
       </div>
       <div class="hr"></div>
-      <div class="entry" id="slash-breakdown">
+      <div class="entry" id="slash-command-breakdown">
         <h1 class="heading">Slash Command Breakdown</h1>
         <h2 class="subheading">What the heck is a slash command anyway?</h2>
         <div class="content">
           <p class="line">Slash commands are the main entrypoint for bots on Discord. They allow you to do lots of really cool things, but it all starts with the slash command!</p>
-          <h2 class="heading" id="how-to-use">How to use a Slash Command</h2>
+          <h2 class="heading" id="how-to-use-a-slash-command">How to use a Slash Command</h2>
           <h2 class="subheading">Slash commands can be used in a few simple steps. Below you will learn how to send a slash command</h2>
           <p class="line">
             To use a slash command, navigate to the chat box (where you type your messages) and type the <span class="emph bold">/</span> key. The screen should populate with every command that is available to you. Choose the command you'd like to
@@ -73,7 +91,7 @@
             <p class="caption">Click or tap the command to run</p>
           </p>
           <br>
-          <h2 class="heading" id="supplying-arguments">Slash Command Breakdown - Supplying Arguments</h2>
+          <h2 class="heading" id="supplying-arguments-to-slash-commands">Supplying Arguments to Slash Commands</h2>
           <p class="line">
             Some commands have required and optional options to include when you run the command. These arguments make themselves known when you enter a command.
           </p>
@@ -93,6 +111,13 @@
             <img class="showcase-image" src="../assets/knowledgebase/command-ran.png" alt="" />
             <p class="caption">Tower Maiden will send her repsonse in the same channel that you're in</p>
           </p>
+
+          <div class="callout">
+            <div class="callout-emoji">
+              <span><img src="../assets/slash.png" alt=""></span>
+            </div>
+            <div class="callout-content">You're ready to use Tower Maiden! <a href="commands">See a full list of available commands here</a></div>
+          </div>
         </div>
 
         
@@ -102,5 +127,7 @@
     <div class="footer">
       <p class="footer-text">🏰 &copy; Elden Towers 2024</p>
     </div>
+
+    <script src="../index.js"></script>
   </body>
 </html>
